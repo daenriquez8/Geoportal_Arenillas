@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>GEOPORTAL DEL CANTÓN ARENILLAS</title>
+	<script src="js/prefixfree.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="../css/styles.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/3dfe6bf29e.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+        window.onload = componentes;
+
+        function componentes(){
+            let c_6 = document.getElementById('componentes')
+            let conj_mapas = document.getElementById('mapaAct')
+
+            /*Selector de Componentes*/
+            c_6.addEventListener('change', (e)=>{
+                
+                switch(e.target.value){
+                    case '1':
+                        //document.getElementById('mapaVisible').innerHTML = 'Aqui va el mapa ' + e.target.selectedOptions[0].text;
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/BIOCLIMA/index.html';
+                        break;
+                    case '2':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/COBERTURA VEGETAL/index.html';
+                        break;
+                    case '3':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/DEFORESTACIÓN/index.html';
+                        break;
+                    case '4':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/ECOSISTEMAS/index.html';
+                        break;
+                    case '5':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/GEOMORFOLOGÍA/index.html';
+                        break;
+                    case '6':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/INTENSIDAD DE PRECIPITACIÓN/index.html';
+                        break;
+                    case '7':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/INTENSIDAD SÍSMICA/index.html';
+                        break;
+                    case '8':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/MOVIMIENTOS DE MASAS/index.html';
+                        break;
+                    case '9':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/SISTEMA NACIONAL DE ÁREAS PROTEGIDAS/index.html';
+                        break;
+                    case '10':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/UNIDADES_HIDROGRAFÍCAS/index.html';
+                        break;
+                    case '11':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/USO DE SUELO/index.html';
+                        break;
+                    case '12':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/ZONA DE INUNDACIÓN/index.html';
+                        break;
+                    case '13':
+                        document.getElementById('mapaVisible').src = '../MAPAS_WEB/AMBIENTALES/index.html';
+                }
+
+                
+            })
+        }	
+    </script>
+</head>
+<body>
+	<nav class="topbar d-flex align-items-center justify-content-between">
+		<!-- Izquierda: Logotipos -->
+		<span class="page-title">GEOPORTAL DE LA PARROQUIA DE ARENILLAS</span>
+		
+		<!-- Centro: Menú -->
+		<style>
+			.nav {
+				list-style-type: none;
+				display: flex;
+				justify-content: center; /* Centra los elementos horizontalmente */
+				padding: 0;
+			}
+
+			.nav-item {
+				margin: 0 15px; /* Espaciado entre los elementos */
+			}
+
+			.nav-link {
+				text-decoration: none;
+				font-size: 16px;
+				color: #000;
+				padding: 10px 15px;
+				border-radius: 5px;
+			}
+
+			.nav-link:hover {
+				background-color: #f0f0f0; /* Cambia el fondo al pasar el ratón */
+			}
+		</style>
+		<ul class="nav">
+			<li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+			<li class="nav-item"><a class="nav-link" href="../pages/turismo.html">Turismo</a></li>
+			<li class="nav-item"><a class="nav-link" href="../pages/alimentacion.html">Alimentación</a></li>
+			<li class="nav-item"><a class="nav-link" href="../pages/alojamiento.html">Alojamiento</a></li>
+			<li class="nav-item"><a class="nav-link" href="../pages/salud.html">Salud</a></li>
+			<li class="nav-item"><a class="nav-link" href="../pages/tematicos.html">Temáticos</a></li>
+			<li class="nav-item"><a class="nav-link" href="../pages/transporte.html">Transporte</a></li>
+			<li class="nav-item"><a class="nav-link" href="../pages/ambiental.html">Fichas Ambientales</a></li>
+		</ul>
+		
+		<!-- Derecha: Nombre de la Página -->
+		<div class="d-flex align-items-center">
+			<a href="#" class="navbar-brand me-2">
+				<img src="../imgs/logo_arenillas.png" alt="Logo 1">
+			</a>
+			<a href="#" class="navbar-brand">
+				<img src="https://moodleltga.espe.edu.ec/moodle/pluginfile.php/1/theme_eguru/logo/1683125960/logo%20espe%20100%20an%CC%83os%20variaciones-06%20%281%29.png" alt="Logo 2">
+			</a>
+		</div>
+	</nav>
+
+    <!-- contenido -->
+     
+
+
+    <div class="carousel-container mt-4">
+
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes_arenillas/20240910Reserva.Arrenila.JPG" class="d-block w-100" alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes_arenillas/20240909Puente.Rojo.JPG" class="d-block w-100" alt="Imagen 2">
+                </div>
+            </div>
+            
+            <!-- Controles de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+            
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                <!-- <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button> -->
+            </div>
+            <div class="carousel-caption-custom">
+                <h3>MAPAS TEMÁTICOS</h3>
+                <p>Bienvenidos al visor de Mapas temáticas de la Parroquia de Arenillas donde encontrarás coberturas que caracterizan el espacio geográfico de la parroquia, acorde a los componentes del Plan de Desarrollo y Ordenamiento Territorial vigente </p>
+            </div>
+        </div>
+        
+    </div>  
+
+    <div class="container_mt-3">
+        <div class="d-flex flex-row">
+            <label for="componentes" class="m-3" style="text-align: center; color: aliceblue;">Mapas Temáticos </style></label>
+            <select id="componentes" class="form-select" aria-label="Default select example" style="width: 25%;">
+                <option value="0">Seleccione una opción</option>
+                <option value="1">Bioclimas</option>
+                <option value="2">Cobertura Vegetal</option>
+                <option value="3">Deforestación</option>
+                <option value="4">Ecosistemas</option>
+                <option value="5">Geomorfología</option>
+                <option value="6">Intensidad de precipitación</option>
+                <option value="7">Intensidad sísmica</option>
+                <option value="8">Movimientos de masas</option>
+                <option value="9">Sistema Nacional de Áreas Protegidas</option>
+                <option value="10">Unidades Hidrográficas</option>
+                <option value="11">Uso del suelo</option>
+                <option value="12">Zona de inundación</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <div id="contenedor1" class="cont1">
+            <h3 class="subtitulo_pag">Plan de Desarrollo y Ordenamiento Territorial de Arenillas:</h3>
+                <embed id="pdfamb" src="../PDOT_ARENILLAS.pdf" width="800px" height="775px" ></embed>                    
+        </div>
+        <div id="contenedor2" class="cont2">
+            <h3 class="subtitulo_pag">Geovisor de Mapas Temáticos:</h3>
+            <div class="map_amb">
+                <iframe id="mapaVisible" src="" frameborder="0" ></iframe>
+            </div>         
+        </div>
+    </div>
+    
+    <!-- <div id="map" class="frame-geovisor">
+        <div class="frame-map">
+            <iframe id="mapaVisible" src="" frameborder="0" style="width: 100%; height:80vh; border-radius: 20px; vertical-align: middle; padding: 50px; justify-content: center;align-items: center;"></iframe>
+            <p id="mapaVisible"></p>
+        </div>
+    </div> -->
+
+</body>
+</html>
